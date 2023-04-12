@@ -201,6 +201,7 @@ func (s *Syncer) syncLists() error {
 		}
 	}
 	// remove lists that only exist in Trakt
+	/*
 	traktLists, err := s.traktClient.ListsMetadataGet()
 	if err != nil {
 		return fmt.Errorf("failure fetching trakt lists: %w", err)
@@ -212,6 +213,7 @@ func (s *Syncer) syncLists() error {
 			}
 		}
 	}
+	*/
 	return nil
 }
 
